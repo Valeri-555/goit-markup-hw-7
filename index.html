@@ -27,6 +27,15 @@
                     <li class="item"><a href="" class="header-link link">Contacts</a></li>
                 </ul>
             </nav>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button type="button" class="mobile-menu-open">
+                <svg class="mobile-menu-icon" width="40" height="40">
+                    <use href="/img/icons.svg#icon-menu-mobile"></use>
+                </svg>
+            </button>
+
+            <!-- header contact -->
             <ul class="header-contacts list">
                 <li class="item"><a href="mailto:info@devstudio.com" class="header-mail link" >info@devstudio.com</a></li>
                 <li class="item"><a href="tel:+110001111111" class="header-tel link">+11 (000) 111-11-11</a></li>
@@ -35,15 +44,17 @@
     </header>
     <main>
         <!-- Title -->
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="wrapper-hero container">
         <h1 class="hero-title">Effective Solutions
             for Your Business</h1>
             <button type="button" data-modal-open class="hero-button hero-btn-txt">Order Service</button>
         </div>
-        </section>
+        </section> -->
+
             <!-- Our feauters -->
-            <section class="feauters">
+
+            <!-- <section class="feauters">
                 <div class="container">
                 <h2 hidden class="visually-hidden">Our feauters</h2>
                 <ul class="feauters-list list">
@@ -86,9 +97,11 @@
                     </li>
                 </ul>
             </div>
-            </section>
+            </section> -->
+
             <!-- Our work in pictures -->
-            <section class="works">
+
+            <!-- <section class="works">
                 <div class="works-wrap container">
                 <h2 class="work-title">What are we doing</h2>
                 <ul class="list-works list">
@@ -105,9 +118,11 @@
                     </li>
                 </ul>
             </div>
-            </section>
-            <!-- Our Team -->
-            <section class="team">
+            </section> -->
+
+            <!-- Our Team --> 
+
+            <!-- <section class="team">
                 <div class="container">
                 <h2 class="item-team">Our Team</h2>
                 <ul class="our-team list">
@@ -264,10 +279,11 @@
                     </li>
                 </ul>
             </div>
-            </section>
+            </section> -->
 
             <!-- Customers -->
-            <section class="customers">
+
+            <!-- <section class="customers">
                 <div class="customers-container container">
                     <h2 class="costomers-item">Customers</h2>
                     <ul class="costomers-logo list">
@@ -310,15 +326,17 @@
                         
                     </ul>
                 </div>
-            </section>
+            </section> -->
     </main>
-    <!-- Footer -->
-    <footer class="footer">
+
+    <!-- Footer --> 
+
+    <!-- <footer class="footer">
         <div class="footer-list container">
             <div class="footer-content">
                 <a href="./index.html" class="logo">WEB<span class="logo-footer">STUDIO</span></a>
                 <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
-                </div>
+            </div>
             <div class="footer-social">
                 <p class="footer-item">Social media</p>
                 <ul class="footer-social-list list">
@@ -351,20 +369,43 @@
                         </a>
                     </li>
                 </ul>
-            </div>    
+            </div> -->
+
+            <!-- Footer form -->
+
+            <!-- <div class="footer-form">
+                <h3 class="form-title">Subscribe</h3>
+
+                <form action="" class="subscribe-form">
+                    <label for="subscribe" class="label-subs">
+                        <input type="text" class="input-subs" name="email" id="subscribe" pattern="^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$" placeholder="E-mail">
+                    </label>
+                    <div class="btn-container-subs">
+                        <button type="submit" class="btn-subscribe">Subscribe
+                            <svg class="icon-subs">
+                                <use href="./img/icons.svg#icon-subs"></use>
+                            </svg>
+                        </button>
+                                
+                    </div>
+                </form>
+            </div>
         </div>
-    </footer>
+    </footer> -->
+
     <!-- Modal -->
-    <div class="backdrop is-hidden" data-modal>
+
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" data-modal-close class="btn-close">
                 <svg class="icon-close">
                     <use href="./img/icons.svg#icon-close"></use>
                 </svg>
-            </button>
+            </button> -->
 
             <!-- Form -->
-            <p class="modal-title">Leave your contacts and we will call you back</p>
+
+            <!-- <p class="modal-title">Leave your contacts and we will call you back</p>
             <form action="" class="modal-form">
                 <div class="form-element">
                     <label for="name"><span class="line-name">Name</span> 
@@ -387,7 +428,7 @@
                         <div class="input-wrap">
                         <input type="text" 
                         name="phone" 
-                        class=""
+                        class="form-input"
                         id="phone" 
                         pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
                         minlength="13"
@@ -404,6 +445,7 @@
                         <div class="input-wrap">
                             <input type="email" 
                             name="email"
+                            class="form-input"
                             id="email"
                             placeholder="example@mail.com"
                             pattern="^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$">
@@ -414,27 +456,28 @@
                     </label>
                 </div>
                 <div class="form-element">
-                    <label for="comment"><span class="line-name">Comment</span>
-                        <textarea name="comment" 
+                    <label for="comment">
+                        <span class="line-name">Comment</span>
+                        <textarea name="user-message" 
+                            class="comment"
                             rows="5" 
-                            placeholder="Text input">
-                        </textarea>                
+                            placeholder="Text input"></textarea>                
                     </label>
                 </div>
-                <div>
+                <div class="accept accept-wrop">
                     <input
                         type="checkbox"
-                        id=""
-                        name=""
-                        class=""
+                        id="modal-chek"
+                        name="accept"
+                        class="checkbox visually-hidden"
                         required/>
-                    <label for="" class="">
-                        <p>I accept the terms and conditions of the <a href="#">Privacy Policy</a></p>
+                    <label for="modal-chek" class="modal-form-checkbox">
+                        <p class="accept-text">I accept the terms and conditions of the <a href="#" class="accept-link">Privacy Policy</a></p>
                 </div>
                 <button type="submit" class="form-btn">Send</button>
             </form>
         </div>
-    </div>
-    <script src="./js/modal.js"></script>
+    </div> -->
+    <!-- <script src="./js/modal.js"></script> -->
 </body>
 </html>
