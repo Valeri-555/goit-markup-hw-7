@@ -393,9 +393,17 @@ margin-left: 40px;
     background: var(--background-color);
     padding-top: 190px;
     padding-bottom: 190px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/hero/title-img.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/hero/mobile-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/hero/mobile-hero@2x.jpg);
+    }
 }
 
  @media screen and (max-width: 767px){
