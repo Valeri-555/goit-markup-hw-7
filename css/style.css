@@ -810,6 +810,10 @@ margin-left: 40px;
     }
 }
 
+.team-photo {
+    width: 100%;
+}
+
 .team-name {
     font-weight: 500;
     font-size: 20px;
