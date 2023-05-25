@@ -313,10 +313,9 @@ margin-bottom: 40px;
         letter-spacing: 0.02em;
     }
 
-    .header-contacts .item + .item {
+    .header-tel {
         margin-left: 40px;
-    }
-    
+    }  
 }
 
 
