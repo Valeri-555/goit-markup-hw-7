@@ -1437,8 +1437,19 @@ margin-left: 40px;
 
 img {
     display: block;
-    width: 100%;
     height: auto;
+}
+
+@media  screen and (max-width: 767px) {
+    .img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .img {
+        width: 100%;
+    }
 }
 
 .pr-wrap {
